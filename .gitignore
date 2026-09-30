@@ -1,0 +1,15 @@
+# Donnees individuelles (1 ligne par patient / par mesure / par episode) : jamais versionnees
+outputs/dffinal_clean.xlsx
+outputs/episodes_long.xlsx
+outputs/hypo_episode_full.xlsx
+outputs/hyper_episode_full.xlsx
+outputs/natremia_measurements_long.csv
+# Donnees brutes (hors depot)
+data/
+# Fichiers de travail
+_to_delete/
+*.docx
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+V2/

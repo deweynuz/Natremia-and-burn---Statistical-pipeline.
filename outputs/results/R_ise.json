@@ -1,0 +1,415 @@
+{
+ "n_measurements_raw": {
+  "all": 53131,
+  "lab": 40798,
+  "bga": 12333,
+  "patients_bga": 797
+ },
+ "n_measurements_used": {
+  "all": 50636,
+  "lab": 39143,
+  "bga": 11493,
+  "patients": 1729,
+  "patients_bga": 784
+ },
+ "art_minus_ven": {
+  "pairs": 6147,
+  "patients": 502,
+  "bias": -0.41,
+  "bias_ci": [
+   -0.52,
+   -0.31
+  ],
+  "sd_total": 3.13,
+  "loa": [
+   -6.56,
+   5.73
+  ],
+  "median_abs": 1.0,
+  "pct_abs_le2": 86.0
+ },
+ "pairs_rm": {
+  "pairs": 11244,
+  "patients": 775,
+  "bias": 0.48,
+  "bias_ci": [
+   0.33,
+   0.64
+  ],
+  "sd_total": 3.29,
+  "loa": [
+   -5.96,
+   6.93
+  ]
+ },
+ "pairs_single_lab_day": {
+  "pairs": 5202,
+  "patients": 680,
+  "bias": 0.22,
+  "bias_ci": [
+   0.05,
+   0.38
+  ],
+  "sd_total": 2.85,
+  "loa": [
+   -5.36,
+   5.79
+  ]
+ },
+ "pairs_first_per_patient": {
+  "n": 775,
+  "bias": 0.36,
+  "sd": 3.0,
+  "loa": [
+   -5.53,
+   6.24
+  ]
+ },
+ "abs_diff": {
+  "median": 1.6500000000000057,
+  "iqr": [
+   0.8000000000000114,
+   2.933333333333337
+  ],
+  "pct_le2": 58.8,
+  "pct_gt4": 12.9,
+  "pct_lab_higher": 53.8,
+  "pct_lab_lower": 44.9
+ },
+ "bias_vs_level": [
+  -0.172,
+  -0.186,
+  -0.159,
+  1.1506778751040672e-134
+ ],
+ "class_pairs": {
+  "kappa": 0.508,
+  "agreement_pct": 80.3,
+  "table_rows_lab_cols_bga": [
+   [
+    979,
+    537,
+    8
+   ],
+   [
+    762,
+    7383,
+    442
+   ],
+   [
+    2,
+    459,
+    672
+   ]
+  ],
+  "lab_hypo_bga_normo": 537,
+  "lab_normo_bga_hypo": 762,
+  "lab_hyper_bga_normo": 459,
+  "lab_normo_bga_hyper": 442,
+  "kappa_ci": [
+   0.477,
+   0.541
+  ]
+ },
+ "diff_vs_albumin": {
+  "pairs": 9210,
+  "patients": 708,
+  "alb_median_iqr": [
+   24.0,
+   21.0,
+   27.666666666666668
+  ],
+  "slope_per_10gL": [
+   -0.1,
+   -0.23,
+   0.04,
+   0.15098470417914345
+  ],
+  "intercept": 0.83
+ },
+ "diff_vs_protein": {
+  "pairs": 11237,
+  "prot_median_iqr": [
+   53.370000000000005,
+   48.56,
+   59.0
+  ],
+  "slope_per_10gL": [
+   -0.82,
+   -0.89,
+   -0.74,
+   1.3070284181350707e-97
+  ]
+ },
+ "bias_by_albumin": {
+  "<20": {
+   "n": 1526,
+   "bias": 0.67,
+   "sd": 3.28,
+   "loa": [
+    -5.76,
+    7.11
+   ],
+   "patients": 261
+  },
+  "20\u201324": {
+   "n": 3546,
+   "bias": 0.28,
+   "sd": 3.44,
+   "loa": [
+    -6.47,
+    7.03
+   ],
+   "patients": 452
+  },
+  "25\u201329": {
+   "n": 2718,
+   "bias": 0.54,
+   "sd": 3.01,
+   "loa": [
+    -5.35,
+    6.43
+   ],
+   "patients": 506
+  },
+  "\u226530": {
+   "n": 1420,
+   "bias": 0.73,
+   "sd": 3.21,
+   "loa": [
+    -5.57,
+    7.02
+   ],
+   "patients": 490
+  }
+ },
+ "pct_bga_by_icu_day": {
+  "J-1-J2": 18.7,
+  "J3-J7": 21.9,
+  "J8-J14": 23.5,
+  ">J14": 23.8
+ },
+ "frac_bga_by_group": {
+  "tbsa20": {
+   "yes_median_pct": 24.7,
+   "yes_mean_pct": 22.2,
+   "no_median_pct": 0.0,
+   "no_mean_pct": 6.4
+  },
+  "MAKE": {
+   "yes_median_pct": 25.0,
+   "yes_mean_pct": 22.7,
+   "no_median_pct": 0.0,
+   "no_mean_pct": 9.5
+  },
+  "mechanical_ventilation_D1": {
+   "yes_median_pct": 25.5,
+   "yes_mean_pct": 23.4,
+   "no_median_pct": 0.0,
+   "no_mean_pct": 6.7
+  },
+  "hyper": {
+   "yes_median_pct": 25.7,
+   "yes_mean_pct": 23.4,
+   "no_median_pct": 0.0,
+   "no_mean_pct": 7.1
+  },
+  "hypo": {
+   "yes_median_pct": 14.3,
+   "yes_mean_pct": 15.3,
+   "no_median_pct": 0.0,
+   "no_mean_pct": 6.5
+  }
+ },
+ "patients_any_bga": 784,
+ "sensitivity": {
+  "main_pooled": {
+   "patients_with_na": 1729,
+   "hypo": 888,
+   "hyper": 418,
+   "dysnatremia": 990,
+   "hypo_pct": 50.5,
+   "hyper_pct": 23.8,
+   "dys_pct": 56.3,
+   "cox_main": {
+    "n": 1758,
+    "events": 222,
+    "hyponatremia": [
+     1.15,
+     0.85,
+     1.55,
+     0.37683213097537005
+    ],
+    "hypernatremia": [
+     4.03,
+     2.92,
+     5.56,
+     2.2969649647354738e-17
+    ]
+   },
+   "cox_enriched": {
+    "n": 1745,
+    "events": 212,
+    "hyponatremia": [
+     1.23,
+     0.9,
+     1.68,
+     0.1956797823208668
+    ],
+    "hypernatremia": [
+     2.34,
+     1.65,
+     3.31,
+     2.0761072256131093e-06
+    ]
+   },
+   "reclass_vs_main": {
+    "hypo_lost": 0,
+    "hypo_gained": 0,
+    "hyper_lost": 0,
+    "hyper_gained": 0
+   }
+  },
+  "lab_only": {
+   "patients_with_na": 1729,
+   "hypo": 843,
+   "hyper": 393,
+   "dysnatremia": 963,
+   "hypo_pct": 48.0,
+   "hyper_pct": 22.4,
+   "dys_pct": 54.8,
+   "cox_main": {
+    "n": 1758,
+    "events": 222,
+    "hyponatremia": [
+     1.04,
+     0.76,
+     1.42,
+     0.7953207494117409
+    ],
+    "hypernatremia": [
+     4.32,
+     3.12,
+     5.99,
+     1.3894840551830466e-18
+    ]
+   },
+   "cox_enriched": {
+    "n": 1745,
+    "events": 212,
+    "hyponatremia": [
+     1.17,
+     0.85,
+     1.6,
+     0.34786353235186573
+    ],
+    "hypernatremia": [
+     2.52,
+     1.77,
+     3.58,
+     2.8545626164434236e-07
+    ]
+   },
+   "reclass_vs_main": {
+    "hypo_lost": 45,
+    "hypo_gained": 0,
+    "hyper_lost": 25,
+    "hyper_gained": 0
+   }
+  },
+  "bga_priority_same_day": {
+   "patients_with_na": 1729,
+   "hypo": 866,
+   "hyper": 366,
+   "dysnatremia": 970,
+   "hypo_pct": 49.3,
+   "hyper_pct": 20.8,
+   "dys_pct": 55.2,
+   "cox_main": {
+    "n": 1758,
+    "events": 222,
+    "hyponatremia": [
+     1.2,
+     0.88,
+     1.62,
+     0.24492585831131347
+    ],
+    "hypernatremia": [
+     3.34,
+     2.44,
+     4.59,
+     7.520722538482078e-14
+    ]
+   },
+   "cox_enriched": {
+    "n": 1745,
+    "events": 212,
+    "hyponatremia": [
+     1.19,
+     0.87,
+     1.63,
+     0.2806403143097904
+    ],
+    "hypernatremia": [
+     2.11,
+     1.51,
+     2.95,
+     1.0891987337827418e-05
+    ]
+   },
+   "reclass_vs_main": {
+    "hypo_lost": 22,
+    "hypo_gained": 0,
+    "hyper_lost": 52,
+    "hyper_gained": 0
+   }
+  },
+  "lab_bias_corrected": {
+   "patients_with_na": 1729,
+   "hypo": 1002,
+   "hyper": 409,
+   "dysnatremia": 1086,
+   "hypo_pct": 57.0,
+   "hyper_pct": 23.3,
+   "dys_pct": 61.8,
+   "cox_main": {
+    "n": 1758,
+    "events": 222,
+    "hyponatremia": [
+     1.05,
+     0.77,
+     1.42,
+     0.759120721956767
+    ],
+    "hypernatremia": [
+     4.09,
+     2.97,
+     5.64,
+     8.098549342622778e-18
+    ]
+   },
+   "cox_enriched": {
+    "n": 1745,
+    "events": 212,
+    "hyponatremia": [
+     1.1,
+     0.81,
+     1.51,
+     0.5454806566786168
+    ],
+    "hypernatremia": [
+     2.36,
+     1.66,
+     3.34,
+     1.4514886166331791e-06
+    ]
+   },
+   "reclass_vs_main": {
+    "hypo_lost": 0,
+    "hypo_gained": 114,
+    "hyper_lost": 9,
+    "hyper_gained": 0
+   }
+  }
+ }
+}
